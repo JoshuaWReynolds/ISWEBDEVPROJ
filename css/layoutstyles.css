@@ -1,0 +1,80 @@
+body {
+    color: #1e90ff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-image: url('../assets/img/byu\ campus.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the mainbody horizontally */
+}
+
+.header {
+    width: 80%; /* Adjust width as needed */
+    height: 100px;
+    z-index: 2;
+    border-bottom: solid 1px #555555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out items */
+    padding: 10px;
+    background-color: #ffffff; /* Solid background */
+    margin-top: 20px; /* Add some space at the top */
+}
+
+.header .left, .header .right {
+    display: flex;
+    align-items: center;
+}
+
+.mainbody {
+    width: 80%; /* Adjust width as needed */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Solid background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Add vertical margin */
+    flex-grow: 1;
+    color: black;
+}
+
+.footer {
+    width: 80%; /* Adjust width as needed */
+    height: 25px;
+    font-size: 8px;
+    color: #999999;
+    text-align: center;
+    padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    border-top: solid 1px #555555;
+    background-color: #ffffff; /* Solid background */
+}
+
+li {
+    font-size: 10pt;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .header, .mainbody, .footer {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header, .mainbody, .footer {
+        width: 95%; /* Adjust width for very small screens */
+    }
+}
